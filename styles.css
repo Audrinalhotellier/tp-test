@@ -127,7 +127,7 @@ img {
 
 
 
-@media all and (min-width: 375px) and (max-width: 1400px){
+@media all and (min-width: 300px) and (max-width: 1400px){
 
     .container-grille {
         display: flex;
