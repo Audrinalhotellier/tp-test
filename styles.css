@@ -63,6 +63,7 @@ main {
     background-color: #f17;
     background-image: linear-gradient;
     transition: background-color 1s;
+	text-align: center;
 }
 
 main:hover{
@@ -150,6 +151,7 @@ img {
     background-color: #f17;
     background-image: linear-gradient;
     transition: background-color 1s;
+		text-align: center;
 }
 
     main:hover{
