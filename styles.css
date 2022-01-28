@@ -1,0 +1,165 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-grille {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+	justify-content: center;
+    font-size: 1.375em;
+    background-image: url("medias/banniere.jpg");
+    color: #fff;
+	background-size: cover;
+	display: flex;
+	width: 100vw;
+	height: 450px;
+
+}
+
+nav {
+    background-color: #f17;
+}
+.onglets {
+    list-style-type: none;
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.onglets li {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onglets li a {
+    font-size: 1.125em;
+    color: #f1f1f1;
+}
+
+
+main {
+    padding: 20px;
+	background-color: #454343;
+	color: white;
+	justify-content: center;
+	font-family: Typo Montserrat;
+    background-color: #f17;
+    background-image: linear-gradient;
+    transition: background-color 1s;
+}
+
+main:hover{
+     background-color: #454343;
+}
+
+
+h1 {
+    margin-bottom: 15px;
+	text-align: center;
+}
+
+aside {
+    padding: 20px;
+    background-color: #454343;
+    font-size: 1.375em;
+    color: #FFF;
+}
+aside p {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+}
+
+footer {
+    grid-column: span 3;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.25em;
+    background-color: #2e282a;
+    color: #fff;
+	justify-content: center;
+	align-content: center; 
+}
+footer p {
+	height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+   
+}
+
+img {
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+}
+
+.button {
+    background-color: #f17; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
+
+
+
+@media all and (min-width: 375px) and (max-width: 1400px){
+
+    .container-grille {
+        display: flex;
+        flex-direction: column;
+    }
+    .onglets {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .onglets li {
+        margin: 0 10px;
+    }
+	
+	main {
+    padding: 20px;
+	background-color: #454343;
+	color: white;
+	justify-content: center;
+	font-family: Typo Montserrat;
+    background-color: #f17;
+    background-image: linear-gradient;
+    transition: background-color 1s;
+}
+
+    main:hover{
+     background-color: #454343;
+}
+    main p {
+        min-height: 610px;
+    }
+    aside p {
+        height: auto;
+    }
+
+}
